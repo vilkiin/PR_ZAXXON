@@ -27,7 +27,7 @@ public class NaveMove : MonoBehaviour
         float desplR = Input.GetAxis("Rotation");
         transform.Rotate(0f, 0f, desplR * Time.deltaTime * -rotationSpeed);
 
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+       // transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
         float posY = transform.position.y;
         float posX = transform.position.x;
