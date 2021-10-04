@@ -10,7 +10,7 @@ public class Obstaculos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 10f;
+        speed = 20f;
         
     }
 

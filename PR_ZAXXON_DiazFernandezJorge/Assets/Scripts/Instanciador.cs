@@ -15,30 +15,59 @@ public class Instanciador : MonoBehaviour
     {
         intervalo = 1f;
         StartCoroutine("CrearColumna");
+        StartCoroutine("CrearColumna");
+        StartCoroutine("CrearColumna");
+        StartCoroutine("CrearColumna");
+        StartCoroutine("CrearColumna"); 
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    IEnumerable CrearColumna()
+    IEnumerator CrearColumna()
     {
 
         while (true)
         {
             print("hola");
-            
-            Instantiate(columna, instantiatePos);
-            
+            float randomX = Random.Range(-25f, 25f);
+            Vector3 newPos = new Vector3(randomX, instantiatePos.position.y, instantiatePos.position.z);
+            Instantiate(columna, newPos, Quaternion.identity);
+
             yield return new WaitForSeconds(intervalo);
 
 
         }
 
+
     }
 
 
+    IEnumerator CrearColumnas()
+    {
 
+        while (true)
+        {
+            print("hola");
+            float randomX = Random.Range(-18f, 18f);
+            Vector3 newPos = new Vector3(randomX, instantiatePos.position.y, instantiatePos.position.z);
+            Instantiate(columna, newPos, Quaternion.identity);
+
+            yield return new WaitForSeconds(intervalo);
+
+
+        }
+
+
+
+
+
+
+
+
+    }
 }
