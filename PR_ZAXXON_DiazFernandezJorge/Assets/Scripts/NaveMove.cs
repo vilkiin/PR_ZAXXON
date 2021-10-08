@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class NaveMove : MonoBehaviour
 {
-
+    public GameObject disparo;
+    public Transform navePos;
     [SerializeField] float desplSpeed;
     float speed;
    // float limite = 10;
@@ -51,9 +52,17 @@ public class NaveMove : MonoBehaviour
             transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
         }
-
         
+        float desplZ = 1f;
+        Vector3 despl = new Vector3(0, 0, desplZ);
+        Vector3 destPos = navePos.position;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(disparo, destPos, Quaternion.identity);
+            destPos = destPos + despl;
 
+
+        }
 
 
 
