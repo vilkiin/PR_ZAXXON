@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class NaveMove : MonoBehaviour
 {
 
@@ -51,11 +51,25 @@ public class NaveMove : MonoBehaviour
             transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
         }
+
+        
+
+
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+        
+            Destroy(gameObject);
+        
+
+        
     }
 
 
-
-   
 
 
 
