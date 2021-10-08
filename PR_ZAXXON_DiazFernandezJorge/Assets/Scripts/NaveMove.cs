@@ -13,7 +13,7 @@ public class NaveMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        desplSpeed = 15f;
+        desplSpeed = 20f;
         speed = 5;
     }
 
@@ -31,14 +31,14 @@ public class NaveMove : MonoBehaviour
 
         float posY = transform.position.y;
         float posX = transform.position.x;
-        if (posX > 25f && desplX > 0)
+        if (posX > 23f && desplX > 0)
         {
-            transform.position = new Vector3(25f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(23f, transform.position.y, transform.position.z);
 
         }
-        if (posX < -25f && desplX < 0)
+        if (posX < -23f && desplX < 0)
         {
-            transform.position = new Vector3(-25f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-23f, transform.position.y, transform.position.z);
 
         }
         if (posY > 10f && desplY > 0)
@@ -52,4 +52,25 @@ public class NaveMove : MonoBehaviour
 
         }
     }
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+

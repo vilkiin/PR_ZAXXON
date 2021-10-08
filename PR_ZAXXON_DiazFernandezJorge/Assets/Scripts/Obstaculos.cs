@@ -10,7 +10,7 @@ public class Obstaculos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 20f;
+        speed = 80f;
         
     }
 
@@ -19,10 +19,20 @@ public class Obstaculos : MonoBehaviour
     {
         
         transform.Translate(Vector3.back * Time.deltaTime * speed);
+        
+        float posz = transform.position.z;
+;        if (posz < -20f)
+        {
+
+            Destroy(gameObject);
+
+        }
+
+
     }
 
-
-
-
     
+
+
+
 }

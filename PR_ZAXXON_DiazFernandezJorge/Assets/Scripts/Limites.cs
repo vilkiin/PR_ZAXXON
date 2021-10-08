@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Instanciador : MonoBehaviour
+public class Limites : MonoBehaviour
 {
 
     float intervalo;
@@ -13,13 +13,10 @@ public class Instanciador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        intervalo = 0.5f;
+        intervalo = 0.04f;
         StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna"); 
-        
+       
+
     }
 
     // Update is called once per frame
@@ -33,9 +30,9 @@ public class Instanciador : MonoBehaviour
 
         while (true)
         {
+
             
-            float randomX = Random.Range(-25f, 25f);
-            Vector3 newPos = new Vector3(randomX, instantiatePos.position.y, instantiatePos.position.z);
+            Vector3 newPos = new Vector3(instantiatePos.position.x, instantiatePos.position.y, instantiatePos.position.z);
             Instantiate(columna, newPos, Quaternion.identity);
 
             yield return new WaitForSeconds(intervalo);
@@ -47,11 +44,11 @@ public class Instanciador : MonoBehaviour
     }
 
 
-    
-    
 
 
-    
+
+
+
 
 
 
