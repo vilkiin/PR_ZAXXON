@@ -63,7 +63,7 @@ public class NaveMove : MonoBehaviour
 
 
         }
-
+        
 
 
     }
