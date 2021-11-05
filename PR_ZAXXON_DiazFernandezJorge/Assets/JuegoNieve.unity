@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d2922a3b1f59b4ab91b5c267bea540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columna: {fileID: 4795946223584777288, guid: d06ab30a75807ca4f8dd3fb615081060, type: 3}
+  columna: {fileID: 4795946223584777288, guid: 2522df02710013e41b324b4b65cb868f, type: 3}
   instantiatePos: {fileID: 2030332681}
 --- !u!4 &959639026
 Transform:
@@ -916,7 +916,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 404e322d073bdcd48818327d401a5b24, type: 2}
+  - {fileID: 2100000, guid: 392bffa712e39cf4a9ee9e77b6533513, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1087,7 +1087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e45be8db8b5f794e8cca5ac33fd0dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columna: {fileID: 4795946223584777288, guid: d06ab30a75807ca4f8dd3fb615081060, type: 3}
+  columna: {fileID: 4795946223584777288, guid: 2522df02710013e41b324b4b65cb868f, type: 3}
   instantiatePos: {fileID: 1108170668}
 --- !u!4 &1108170668
 Transform:
@@ -1246,7 +1246,6 @@ MonoBehaviour:
   disparo: {fileID: 9198161010004150537, guid: 82683cb424af96148b4788b5bdd79895, type: 3}
   navePos: {fileID: 1568639884}
   desplSpeed: 0
-  nave: {fileID: 1568639883}
 --- !u!65 &1568639886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1388,7 +1387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e45be8db8b5f794e8cca5ac33fd0dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columna: {fileID: 4795946223584777288, guid: d06ab30a75807ca4f8dd3fb615081060, type: 3}
+  columna: {fileID: 4795946223584777288, guid: 2522df02710013e41b324b4b65cb868f, type: 3}
   instantiatePos: {fileID: 1850207860}
 --- !u!4 &1850207860
 Transform:

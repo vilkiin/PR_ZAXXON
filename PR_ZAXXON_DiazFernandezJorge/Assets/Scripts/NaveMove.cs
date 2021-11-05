@@ -8,7 +8,9 @@ public class NaveMove : MonoBehaviour
     public Transform navePos;
     [SerializeField] float desplSpeed;
     float speed;
-   // float limite = 10;
+
+    [SerializeField] GameObject nave;
+    // float limite = 10;
     float rotationSpeed = 100;
 
     // Start is called before the first frame update
@@ -70,10 +72,10 @@ public class NaveMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        
-            Destroy(gameObject);
-        
+
+
+        //Destroy(gameObject);
+        nave.SetActive (false);
 
         
     }

@@ -20,7 +20,37 @@ public class MenuInicio : MonoBehaviour
     public void LoadScene(string sceneName)
     {
 
-        SceneManager.LoadScene("Juego");
+        SceneManager.LoadScene("Tematica");
     }
 
+
+    public void Jungla()
+    {
+        SceneManager.LoadScene("Juego");
+
+    }
+
+    public void Desierto()
+    {
+        SceneManager.LoadScene("JuegoDesierto");
+
+    }
+    public void Nieve()
+    {
+        SceneManager.LoadScene("JuegoNieve");
+
+    }
+
+    public void Configuracion()
+    {
+        SceneManager.LoadScene("Configuracion");
+
+    }
+
+    public void Inicio()
+    {
+        SceneManager.LoadScene("Menu");
+
+    }
 }
+

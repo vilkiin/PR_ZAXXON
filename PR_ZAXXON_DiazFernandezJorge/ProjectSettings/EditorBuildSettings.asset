@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Menu.unity
     guid: 893ce13228ff48a4bb7bd91610cc4bde
+  - enabled: 1
+    path: Assets/Tematica.unity
+    guid: 315347562616c824980e7fa24a192d3a
+  - enabled: 1
+    path: Assets/JuegoDesierto.unity
+    guid: e8abb577f749596488a39e887ca54b70
+  - enabled: 1
+    path: Assets/JuegoNieve.unity
+    guid: 17b307edeb67cae4ba19bc995cedcdc9
+  - enabled: 1
+    path: Assets/Configuracion.unity
+    guid: 98cee276c0ce175478277fc20f97d173
   m_configObjects: {}
