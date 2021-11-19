@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
@@ -8,11 +9,14 @@ public class Pause : MonoBehaviour
 
     public static bool GameIsPause = false;
     public GameObject pauseMenuUI;
-
+    [SerializeField] Text score;
+    [SerializeField] Button retry;
+    public int puntos;
     // Start is called before the first frame update
     void Start()
     {
-
+        puntos = 0;
+        score.text = "score: " + puntos;
     }
 
     // Update is called once per frame
@@ -42,10 +46,16 @@ public class Pause : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPause = true;
+        retry.Select();
     }
      public void Menu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        puntos++;
+        score.text = "score: " + puntos;
     }
 }

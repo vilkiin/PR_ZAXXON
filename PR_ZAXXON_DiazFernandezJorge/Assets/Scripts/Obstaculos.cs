@@ -10,14 +10,14 @@ public class Obstaculos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 80f;
+        
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        speed = GameObject.Find("Nave").GetComponent<NaveMove>().speed;
         transform.Translate(Vector3.back * Time.deltaTime * speed);
         
         float posz = transform.position.z;

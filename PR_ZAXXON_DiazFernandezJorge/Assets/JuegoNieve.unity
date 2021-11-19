@@ -1246,6 +1246,7 @@ MonoBehaviour:
   disparo: {fileID: 9198161010004150537, guid: 82683cb424af96148b4788b5bdd79895, type: 3}
   navePos: {fileID: 1568639884}
   desplSpeed: 0
+  nave: {fileID: 1568639883}
 --- !u!65 &1568639886
 BoxCollider:
   m_ObjectHideFlags: 0
