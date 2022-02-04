@@ -408,6 +408,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
   score: {fileID: 1905196918}
+  retry: {fileID: 0}
+  puntos: 0
 --- !u!1 &186199812
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 90792294}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &618507365
@@ -1893,6 +1895,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1938675262}
   score: {fileID: 0}
+  retry: {fileID: 90792296}
+  puntos: 0
 --- !u!1 &2013693420
 GameObject:
   m_ObjectHideFlags: 0
