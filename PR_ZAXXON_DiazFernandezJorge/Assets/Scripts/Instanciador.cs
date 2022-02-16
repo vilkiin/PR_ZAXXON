@@ -7,7 +7,7 @@ public class Instanciador : MonoBehaviour
 {
 
     float intervalo;
-    [SerializeField] GameObject columna;
+    [SerializeField] GameObject[] obstaculos;
     [SerializeField] Transform instantiatePos;
 
     // Start is called before the first frame update
@@ -15,10 +15,6 @@ public class Instanciador : MonoBehaviour
     {
         intervalo = 0.5f;
         StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna"); 
         
     }
 
@@ -33,10 +29,10 @@ public class Instanciador : MonoBehaviour
 
         while (true)
         {
-            
+            int numAl = Random.Range(0, obstaculos.Length);
             float randomX = Random.Range(-25f, 25f);
             Vector3 newPos = new Vector3(randomX, instantiatePos.position.y, instantiatePos.position.z);
-            Instantiate(columna, newPos, Quaternion.identity);
+            Instantiate(obstaculos[numAl], newPos, Quaternion.identity);
 
             yield return new WaitForSeconds(intervalo);
 

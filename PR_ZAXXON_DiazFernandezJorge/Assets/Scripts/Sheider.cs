@@ -12,7 +12,7 @@ public class Sheider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = -8f;
+        speed = -16f;
        
     }
 
