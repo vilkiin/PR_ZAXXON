@@ -14,13 +14,16 @@ public class NaveMove : MonoBehaviour
     float rotationSpeed = 100;
     Obstaculos obstaculos;
 
+    [SerializeField] AudioClip shoot;
+    AudioSource audiosource;
+
     // Start is called before the first frame update
     void Start()
     {
         Golpes.vida = 3;
         desplSpeed = 20f;
          speed = 80f;
-
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -73,7 +76,7 @@ public class NaveMove : MonoBehaviour
         {
             Instantiate(disparo, destPos, Quaternion.identity);
             destPos = destPos + despl;
-
+            audiosource.PlayOneShot(shoot, 2f);
 
         }
 
