@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstaculos
   - Arbol
+  - Pared
   layers:
   - Default
   - TransparentFX
