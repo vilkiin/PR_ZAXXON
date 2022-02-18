@@ -30,7 +30,7 @@ public class Instanciador : MonoBehaviour
         while (true)
         {
             int numAl = Random.Range(0, obstaculos.Length);
-            float randomX = Random.Range(-25f, 25f);
+            float randomX = Random.Range(-24f, 24f);
             Vector3 newPos = new Vector3(randomX, instantiatePos.position.y, instantiatePos.position.z);
             Instantiate(obstaculos[numAl], newPos, Quaternion.identity);
 

@@ -10,17 +10,17 @@ public class ParedesL : MonoBehaviour
     void Start()
     {
 
-
+        speed = GameObject.Find("InitGame").GetComponent<InitGame>().speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        speed = GameObject.Find("InitGame").GetComponent<InitGame>().speed;
+        
         transform.Translate(Vector3.right * Time.deltaTime * speed);
 
         float posz = transform.position.z;
-        ; if (posz < -20f)
+        ; if (posz < -25f)
         {
 
             Destroy(gameObject);

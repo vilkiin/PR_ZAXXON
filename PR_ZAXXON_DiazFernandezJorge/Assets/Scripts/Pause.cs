@@ -11,12 +11,12 @@ public class Pause : MonoBehaviour
     public GameObject pauseMenuUI;
     [SerializeField] Text score;
     [SerializeField] Button retry;
-    public int puntos;
+    
     // Start is called before the first frame update
     void Start()
     {
-        puntos = 0;
-        score.text = "score: " + puntos;
+       
+        
     }
 
     // Update is called once per frame
@@ -53,9 +53,5 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        puntos++;
-        score.text = "score: " + puntos;
-    }
+    
 }

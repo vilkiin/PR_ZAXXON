@@ -6,7 +6,7 @@ public class Sheider : MonoBehaviour
 {
 
     [SerializeField] Material mat;
-    [SerializeField]  float speed;
+    public float speed;
 
 
     // Start is called before the first frame update
