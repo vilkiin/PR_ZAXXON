@@ -710,12 +710,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 969525856}
         m_TargetAssemblyTypeName: MenuInicio, Assembly-CSharp
-        m_MethodName: Jungla
-        m_Mode: 1
+        m_MethodName: Escenas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -788,6 +788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 721095458}
+  navecita: {fileID: 0}
+  desplSpeed: 0
+  speed: 80
 --- !u!4 &1470147578
 Transform:
   m_ObjectHideFlags: 0
@@ -966,8 +969,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 969525856}
         m_TargetAssemblyTypeName: MenuInicio, Assembly-CSharp
-        m_MethodName: Inicio
-        m_Mode: 1
+        m_MethodName: Escenas
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

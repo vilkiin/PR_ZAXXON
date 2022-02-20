@@ -108,6 +108,23 @@ public class NaveMove : MonoBehaviour
            
             
         }
+        else if (other.gameObject.tag == "Pared" || other.gameObject.tag == "ParedDer" || other.gameObject.tag == "ParedIzq")
+        {
+            Golpes.vida = 0;
+            if (Golpes.vida == 0)
+            {
+                initGame.navecita.SetActive(false);
+                initGame.speed = 0f;
+                initGame.desplSpeed = 0f;
+                sheider.speed = 0f;
+                print("velocidad" + speed);
+                print("despl" + desplSpeed);
+
+                StartCoroutine("Morir");
+
+
+            }
+        }
 
         //Destroy(gameObject);
         // nave.SetActive (false);

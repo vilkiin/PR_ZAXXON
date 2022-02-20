@@ -22,7 +22,10 @@ public class Limites : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+       if (Golpes.vida == 0)
+        {
+            StopCoroutine("CrearColumna");
+        }
     }
 
     IEnumerator CrearColumna()

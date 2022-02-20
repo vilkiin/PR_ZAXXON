@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicio : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,40 +18,15 @@ public class MenuInicio : MonoBehaviour
         
     }
 
-    public void LoadScene(string sceneName)
+    
+
+
+    public void Escenas(int escena)
     {
-
-        SceneManager.LoadScene("Tematica");
-    }
-
-
-    public void Jungla()
-    {
-        SceneManager.LoadScene("Juego");
+        SceneManager.LoadScene(escena);
 
     }
 
-    public void Desierto()
-    {
-        SceneManager.LoadScene("JuegoDesierto");
-
-    }
-    public void Nieve()
-    {
-        SceneManager.LoadScene("JuegoNieve");
-
-    }
-
-    public void Configuracion()
-    {
-        SceneManager.LoadScene("Configuracion");
-
-    }
-
-    public void Inicio()
-    {
-        SceneManager.LoadScene("Menu");
-
-    }
+    
 }
 
