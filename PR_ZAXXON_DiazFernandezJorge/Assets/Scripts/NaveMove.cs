@@ -10,6 +10,7 @@ public class NaveMove : MonoBehaviour
     public float desplSpeed;
     public float speed;
     [SerializeField] GameObject nave;
+    [SerializeField] GameObject explotar;
     // float limite = 10;
     float rotationSpeed = 100;
     Obstaculos obstaculos;
@@ -25,6 +26,7 @@ public class NaveMove : MonoBehaviour
         initGame = GameObject.Find("InitGame").GetComponent<InitGame>();
         sheider = GameObject.Find("Plane").GetComponent<Sheider>();
         audiosource = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -100,7 +102,7 @@ public class NaveMove : MonoBehaviour
                 sheider.speed = 0f;
                 print("velocidad" + speed);
                 print("despl" + desplSpeed);
-
+                Instantiate(explotar, navePos.position, Quaternion.identity);
                 StartCoroutine("Morir");
 
 
@@ -119,7 +121,7 @@ public class NaveMove : MonoBehaviour
                 sheider.speed = 0f;
                 print("velocidad" + speed);
                 print("despl" + desplSpeed);
-
+                Instantiate(explotar, navePos.position, Quaternion.identity);
                 StartCoroutine("Morir");
 
 
