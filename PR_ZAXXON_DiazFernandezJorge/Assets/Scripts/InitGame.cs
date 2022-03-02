@@ -18,8 +18,11 @@ public class InitGame : MonoBehaviour
     public float speed = 80f;
     void Start()
     {
-        puntos = 0;
-        score.text = "score: " + puntos;
+        numero = 0;
+        minuto = 0;
+        hora = 0;
+       
+        
         speed = 80f;
         desplSpeed = 20f;
         StartCoroutine("contador");
