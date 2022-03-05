@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuInicio : MonoBehaviour
 {
@@ -28,5 +29,11 @@ public class MenuInicio : MonoBehaviour
     }
 
     
+    public void salir()
+    {
+        
+       Application.Quit();
+        
+    }
 }
 
